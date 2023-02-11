@@ -11,9 +11,9 @@
       <h1>Hello! Welcome to my Neighborhood!</h1>
     </div>
     <div class="form">
-      <h3>Input a number greater than 0 below:</h3>
+      <h3>Input an integer greater than 0 or equal to 0:</h3>
       <form>
-        <input type="number" placeholder="any number over 0">
+        <input id="numInput" type="number" min="0" required placeholder="a positive integer or 0" />
         <br><br>
         <button class="btn-dark" type="submit">Count!</button>
       </form>
