@@ -36,11 +36,10 @@ _Copyright (c) 2023, Amanda GUan_
 Amanda Guan <ag.amandaguan@gmail.com>
 
 # TDD:
-
--_describe count(numInput)_
--_Test: "It should return an array of numbers from 0 to the user's inputted number"_
--_Code: count(5);_
--_Expected Output: '0, 1, 2, 3, 4, 5'_
+- _describe count(numInput)_
+- _Test: "It should return an array of numbers from 0 to the user's inputted number"_
+- _Code: count(5);_
+- _Expected Output: '0, 1, 2, 3, 4, 5'_
 
 -_Test: "It should return "won't you be my neighbor" for number 3"_
 -_Code: count(3);_
