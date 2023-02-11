@@ -12,8 +12,7 @@ function count(numInput){
         numberArray.push(i);
       }
     };
-    return numberArray.join(", ");//0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
-    // return numberArray//0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?
+    return numberArray.join(", ");
 }
   
 //UI logic
