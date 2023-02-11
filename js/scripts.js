@@ -26,4 +26,10 @@ window.addEventListener("load", function(){
       const output = document.getElementById("output")
       output.append(count(numInput));
     });
+    resetBtn.addEventListener("click", function(){
+        const input = document.querySelector("input");
+        output.innerText = null;
+        input.value = null;
+        resetBtn.style.display = "none";
+      })
 });
