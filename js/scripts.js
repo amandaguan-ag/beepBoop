@@ -4,7 +4,7 @@ function count(numInput, nameInput){
     for (let i = 0; i <= numInput; i ++){
       if (i.toString().includes("3")){
         if(nameInput){
-        numberArray.push(`Won't you be my neighbor, ${nameInput}?`);
+        numberArray.push(`Won't you be my neighbor, ${nameInput.trim()}?`);
         }else{
           numberArray.push(`Won't you be my neighbor?`);   
         }

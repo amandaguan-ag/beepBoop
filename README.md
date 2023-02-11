@@ -29,7 +29,7 @@ _Not available _
 
 ## License
 
-_Copyright (c) 2023, Amanda GUan_
+_Copyright (c) 2023, Amanda Guan_
 
 ## Contact Information
 
