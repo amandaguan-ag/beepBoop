@@ -48,3 +48,12 @@ body {
     background-color: #23272b;
     border-color: #1d2124;
   }
+
+  .hidden{
+    display: none;
+  }
+
+  img{
+    margin-top: 5px;
+    width: 150px;
+  }

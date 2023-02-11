@@ -1,9 +1,9 @@
 // business logic
-function count(numInput){
+function count(numInput, nameInput){
     let numberArray = []
     for (let i = 0; i <= numInput; i ++){
       if (i.toString().includes("3")){
-        numberArray.push("Won't you be my neighbor?");
+        numberArray.push(`Won't you be my neighbor, ${nameInput}?`);
       } else if (i.toString().includes("2")) {
         numberArray.push("Boop!");
       } else if (i.toString().includes("1")){
@@ -23,8 +23,9 @@ window.addEventListener("load", function(){
       event.preventDefault();
       resetBtn.removeAttribute("style");
       const numInput = document.getElementById("numInput").value;
+      const nameInput = document.getElementById("name").value;
       const output = document.getElementById("output")
-      output.append(count(numInput));
+      output.append(count(numInput,nameInput));
     });
     resetBtn.addEventListener("click", function(){
         const input = document.querySelector("input");
