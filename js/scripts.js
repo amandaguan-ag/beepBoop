@@ -7,8 +7,8 @@ function count(numInput){
         numberArray.push("Won't you be my neighbor?");
       } else if (i.toString().includes("2")) {
         numberArray.push("Boop!");
-    //   } else if (i.toString().includes("1")){
-    //     numberArray.push("Beep!");
+      } else if (i.toString().includes("1")){
+        numberArray.push("Beep!");
       } else {
         numberArray.push(i);
       }
