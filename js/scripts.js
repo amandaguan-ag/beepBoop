@@ -3,29 +3,28 @@
 function count(numInput){
     let numberArray = []
     for (let i = 0; i <= numInput; i ++){
-    //   if (i.toString().includes("3")){
-    //     numberArray.push("Won't you be my neighbor?");
+      if (i.toString().includes("1")){
+        numberArray.push("Beep!");
     //   } else if (i.toString().includes("2")) {
     //     numberArray.push("Boop!");
-    //   } else if (i.toString().includes("1")){
-    //     numberArray.push("Beep!");
-    //   } else {
+    //   } else if (i.toString().includes("3")){
+    //     numberArray.push("Won't you be my neighbor?");
+      } else {
         numberArray.push(i);
-    //   }
+      }
     };
-    // return numberArray;
-    console.log(numberArray);// return numberArray
+    console.log(numberArray);//return numberArray;
   }
   
 // UI logic
-window.addEventListener("load", function(){
-    let form = document.querySelector("form")
-    resetBtn.style.display = "none";
-    form.addEventListener("submit", function(event){
-      event.preventDefault();
-      resetBtn.removeAttribute("style");
-      const numInput = document.getElementById("numInput").value;
-      const output = document.getElementById("output")
-      output.append(count(numInput));
-    });
-});
+// window.addEventListener("load", function(){
+//     let form = document.querySelector("form")
+//     resetBtn.style.display = "none";
+//     form.addEventListener("submit", function(event){
+//       event.preventDefault();
+//       resetBtn.removeAttribute("style");
+//       const numInput = document.getElementById("numInput").value;
+//       const output = document.getElementById("output")
+//       output.append(count(numInput));
+//     });
+// });
