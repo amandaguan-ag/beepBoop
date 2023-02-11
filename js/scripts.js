@@ -1,4 +1,3 @@
-// Utility logic
 // business logic
 function count(numInput){
     let numberArray = []
@@ -13,18 +12,19 @@ function count(numInput){
         numberArray.push(i);
       }
     };
-    console.log(numberArray);//return numberArray;
-  }
+    return numberArray.join(", ");//0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
+    // return numberArray//0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?
+}
   
-// UI logic
-// window.addEventListener("load", function(){
-//     let form = document.querySelector("form")
-//     resetBtn.style.display = "none";
-//     form.addEventListener("submit", function(event){
-//       event.preventDefault();
-//       resetBtn.removeAttribute("style");
-//       const numInput = document.getElementById("numInput").value;
-//       const output = document.getElementById("output")
-//       output.append(count(numInput));
-//     });
-// });
+//UI logic
+window.addEventListener("load", function(){
+    let form = document.querySelector("form")
+    resetBtn.style.display = "none";
+    form.addEventListener("submit", function(event){
+      event.preventDefault();
+      resetBtn.removeAttribute("style");
+      const numInput = document.getElementById("numInput").value;
+      const output = document.getElementById("output")
+      output.append(count(numInput));
+    });
+});
