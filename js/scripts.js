@@ -1,10 +1,12 @@
 // business logic
 function count(numInput, nameInput) {
-  let numberArray = [];
-  for (let i = 0; i <= numInput; i++) {
-    if (i.toString().includes("3")) {
-      if (nameInput) {
-        numberArray.push(`Won't you be my neighbor, ${nameInput.trim()}?`);
+    let numberArray = [];
+    for (let i = 0; i <= numInput; i++) {
+        if (i.toString().includes("3")) {
+            if (nameInput) {
+            let trimNameInput = nameInput.trim();
+            let capitalNameInput = trimNameInput.charAt(0).toUpperCase() + trimNameInput.slice(1);
+            numberArray.push(`Won't you be my neighbor, ${capitalNameInput}?`);
       } else {
         numberArray.push(`Won't you be my neighbor?`);
       }
