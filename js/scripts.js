@@ -13,7 +13,8 @@ function count(numInput){
         numberArray.push(i);
     //   }
     };
-    return numberArray.join(", ");
+    // return numberArray;
+    console.log(numberArray);// return numberArray
   }
   
 // UI logic
