@@ -3,15 +3,15 @@
 function count(numInput){
     let numberArray = []
     for (let i = 0; i <= numInput; i ++){
-    //   if (i.toString().includes("3")){
-    //     numberArray.push("Won't you be my neighbor?");
+      if (i.toString().includes("3")){
+        numberArray.push("Won't you be my neighbor?");
     //   } else if (i.toString().includes("2")) {
     //     numberArray.push("Boop!");
     //   } else if (i.toString().includes("1")){
     //     numberArray.push("Beep!");
-    //   } else {
+      } else {
         numberArray.push(i);
-    //   }
+      }
     };
     console.log(numberArray);//return numberArray;
   }
